@@ -1,4 +1,14 @@
 class Solver
+  def factorial(num)
+    if num.zero?
+      1
+    elsif num.negative?
+      raise 'Negative number entered'
+    else
+      num * factorial(num - 1)
+    end
+  end
+
 
   def fizzbuzz(num)
     if (num % 3).zero? and (num % 5).zero?
