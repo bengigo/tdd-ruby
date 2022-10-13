@@ -1,6 +1,6 @@
 ## TDD-Ruby
 
-> A small application for practising Test Driven Development
+> A small application for practicing Test Driven Development
 
 ## Built With
 
