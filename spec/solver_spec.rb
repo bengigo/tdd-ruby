@@ -15,7 +15,7 @@ describe Solver do
     end
 
     it 'should raise error if the given number is negative' do
-      expect {@solver.factorial(-1)}.to raise_error('Negative number entered')
+      expect { @solver.factorial(-1) }.to raise_error('Negative number entered')
     end
   end
 
@@ -25,11 +25,11 @@ describe Solver do
     end
 
     it 'should reverse 123456 to 654321' do
-      expect(@solver.reverse('123456')). to eq('654321')
+      expect(@solver.reverse('123456')).to eq('654321')
     end
 
     it 'should reverse 12_34-56 to 65-43_21' do
-      expect(@solver.reverse('12_34-56')). to eq('65-43_21')
+      expect(@solver.reverse('12_34-56')).to eq('65-43_21')
     end
   end
 
@@ -50,5 +50,4 @@ describe Solver do
       expect(@solver.fizzbuzz(4)).to eq('4')
     end
   end
-
 end

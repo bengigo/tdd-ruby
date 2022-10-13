@@ -9,6 +9,9 @@ class Solver
     end
   end
 
+  def reverse(str)
+    str.reverse
+  end
 
   def fizzbuzz(num)
     if (num % 3).zero? and (num % 5).zero?
